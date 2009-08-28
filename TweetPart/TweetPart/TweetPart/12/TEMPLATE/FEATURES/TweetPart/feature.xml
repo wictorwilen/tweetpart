@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature  Id="0048c67b-8f2b-4838-97dc-1eacb6c75473"
+          Title="TweetPart"
+          Description="A Twitter WebPart"
+          Version="12.0.0.0"
+          Hidden="FALSE"
+          Scope="Site"
+          DefaultResourceFile="core"
+           ImageUrl="TweetPart\TweetPart_32.png" 
+          xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ElementManifests>
+    <ElementManifest Location="elements.xml"/>
+    <ElementFile Location="TweetPart.webpart" />
+  </ElementManifests>
+</Feature>
