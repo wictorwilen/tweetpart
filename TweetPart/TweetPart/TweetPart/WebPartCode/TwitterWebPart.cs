@@ -43,7 +43,6 @@ namespace TweetPart {
         [WebDisplayName("User name")]
         [WebDescription("The Twitter Username")]
         [Category("Twitter")]
-        //[Personalizable(PersonalizationScope.User)]
         [WebPartStorage(Storage.Personal)]
         public string Username {
             get;
@@ -54,7 +53,6 @@ namespace TweetPart {
         [WebDisplayName("Search for")]
         [WebDescription("Text to search for")]
         [Category("Twitter")]
-        //[Personalizable(PersonalizationScope.User)]
         [WebPartStorage(Storage.Personal)]
         public string SearchText {
             get;
@@ -65,7 +63,6 @@ namespace TweetPart {
         [WebDisplayName("Time line mode")]
         [WebDescription("Friends or user time line")]
         [Category("Twitter")]
-        //[Personalizable(PersonalizationScope.User)]
         [WebPartStorage(Storage.Personal)]
         public TwitterTimeLineMode Mode {
             get;
@@ -91,8 +88,7 @@ namespace TweetPart {
         EditorPartCollection IWebEditable.CreateEditorParts() {
             // control the editorparts
             List<EditorPart> editors = new List<EditorPart>();
-            TwitterEditorPart editorPart = new TwitterEditorPart();
-            editorPart.ID = this.ID + "_editorPart";
+            TwitterEditorPart editorPart = new TwitterEditorPart { ID = String.Format("{0}_editorPart", this.ID) };
             editors.Add(editorPart);
             return new EditorPartCollection(editors);
 
