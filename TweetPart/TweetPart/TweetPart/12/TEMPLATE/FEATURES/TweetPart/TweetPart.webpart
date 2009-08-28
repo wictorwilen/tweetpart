@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <type name="TweetPart.TwitterWebPart, TweetPart, Version=1.0.0.0, Culture=neutral, PublicKeyToken=0c4a123d24183777" />
+      <importErrorMessage>Cannot import TweetPart Web Part.</importErrorMessage>
+    </metaData>
+    <data>
+      <properties>
+        <property name="Title" type="string">TweetPart</property>
+        <property name="Description" type="string">Sample Web Part by Wictor Wilén</property>
+        <property name="ChromeState" type="chromestate">Normal</property>
+        <property name="AllowZoneChange" type="bool">True</property>
+        <property name="AllowHide" type="bool">True</property>
+        <property name="ExportMode" type="exportmode">NonSensitiveData</property>
+        <property name="TitleIconImageUrl" type="string">/_layouts/images/TweetPart/TweetPart_16.png</property>
+        <property name="CatalogIconImageUrl" type="string">/_layouts/images/TweetPart/TweetPart_16.png</property>
+        <property name="Username" type="string">wictor</property>
+        <property name="Mode" type="TweetPart.TwitterTimeLineMode">User</property>
+        <property name="TweetCount" type="int">10</property>
+      </properties>
+
+    </data>
+  </webPart>
+</webParts>
