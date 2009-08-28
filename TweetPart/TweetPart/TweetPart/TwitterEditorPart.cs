@@ -94,6 +94,7 @@ namespace TweetPart {
                     m_searchPanel.Visible = false;
                     m_usernamePanel.Visible = true;
                     break;
+                case TwitterTimeLineMode.Public:
                 default:
                     m_searchPanel.Visible = false;
                     m_usernamePanel.Visible = false;
