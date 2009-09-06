@@ -21,12 +21,17 @@ using System.Net;
 
 namespace TweetPart {
 
-    [SharePointPermission(SecurityAction.Demand, ObjectModel=true)]
-    [WebPermission(SecurityAction.Demand, AcceptPattern = "http://www.twitter.com/*", ConnectPattern = "http://www.twitter.com/*", Unrestricted=true)]
-    [WebPermission(SecurityAction.Demand, AcceptPattern = "http://search.twitter.com/*", ConnectPattern = "http://search.twitter.com/*", Unrestricted=true)]
     public class TwitterWebPart : System.Web.UI.WebControls.WebParts.WebPart, IWebEditable {
-       
+        /// <summary>
+        /// Initializes a new instance of the TwitterWebPart class.
+        /// </summary>
+        public TwitterWebPart() {
+        }
 
+        
+        [SharePointPermission(SecurityAction.Demand, ObjectModel = true)]
+        [WebPermission(SecurityAction.Demand, AcceptPattern = "http://www.twitter.com/*", ConnectPattern = "http://www.twitter.com/*", Unrestricted = true)]
+        [WebPermission(SecurityAction.Demand, AcceptPattern = "http://search.twitter.com/*", ConnectPattern = "http://search.twitter.com/*", Unrestricted = true)]    
         protected override void CreateChildControls() {
 
 
